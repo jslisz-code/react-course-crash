@@ -8,15 +8,16 @@ function Users() {
 
   async function fetchUser() {
     const { data } = await axios.get(`https://jsonplaceholder.typicode.com/users/${id}`)
-    console.log(data)
     setUser(data)
   }
 
 useEffect(() => {
   fetchUser()
 }, [])
+
   return (
     <div>
+      <Link to="/">Go back</Link>
       <p>{ user.id }</p>
       <p>{ user.name }</p>
       <p>{ user.email }</p>
@@ -25,4 +26,4 @@ useEffect(() => {
   )
 }
 
-export default Users
+export default Users;

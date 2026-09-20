@@ -10,10 +10,9 @@ import Users from "./pages/Users";
 function App() {
   return (
       <Router>
-        <Nav />
         <Routes>
            <Route path="/" element={<Home />} />
-           <Route path="/user/:id" element={<Users />} />
+           <Route path="/users/:id" element={<Users />} />
           </Routes>
         </Router>
     );
