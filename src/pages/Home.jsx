@@ -11,7 +11,7 @@ function Home() {
       "https://jsonplaceholder.typicode.com/users"
      );
      setUsers(data);
-     console.log(data);
+     console.log("Data from Home.jsx: ", data)
     }
 
   useEffect(() => {
